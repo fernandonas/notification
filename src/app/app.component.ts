@@ -12,6 +12,8 @@ export class AppComponent {
   constructor(private oneSignal: OneSignal) {
     this.oneSignal.init({
       appId: "c7edfbab-8c1a-48cc-a504-a308f1ecfb7f",
+      serviceWorkerParam: { scope: "/notification/" },
+      serviceWorkerPath: "notification/OneSignalSDKWorker.js",
     });
   }
 
