@@ -3,6 +3,15 @@
 <head>
   <meta charset="utf-8">
   <title>Notification</title>
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(function(OneSignal) {
+    OneSignal.init({
+      appId: "c7edfbab-8c1a-48cc-a504-a308f1ecfb7f",
+    });
+  });
+</script>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
