@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { OneSignal } from 'onesignal-ngx';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'notification';
+
+  constructor(private oneSignal: OneSignal) {
+    this.oneSignal.init({
+      appId: "c7edfbab-8c1a-48cc-a504-a308f1ecfb7f",
+    });
+  }
+
 }

@@ -24,6 +24,7 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "less",
             "assets": [
+              "src/OneSignalSDKWorker.js",
               "src/favicon.ico",
               "src/assets"
             ],
